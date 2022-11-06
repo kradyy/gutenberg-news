@@ -1,0 +1,55 @@
+{
+	"name": "dynamic-news",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"prettier": "@wordpress/prettier-config",
+	"stylelint": {
+		"extends": "@wordpress/stylelint-config/scss"
+	},
+	"lint-staged": {
+		"*.js": [
+			"wp-scripts lint-js",
+			"wp-scripts format"
+		],
+		"*.scss": [
+			"wp-scripts lint-style",
+			"stylelint \"**/*.scss\" --fix"
+		]
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format && stylelint \"**/*.scss\" --fix",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^13.2.0",
+		"@wordpress/prettier-config": "^2.1.0",
+		"@wordpress/scripts": "^24.2.0",
+		"@wordpress/stylelint-config": "^21.1.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"stylelint": "^14.13.0"
+	},
+	"dependencies": {
+		"@dnd-kit/core": "^6.0.5",
+		"@dnd-kit/modifiers": "^6.0.0",
+		"@dnd-kit/sortable": "^7.0.1",
+		"@dnd-kit/utilities": "^3.2.0",
+		"@wordpress/blob": "^3.20.0",
+		"@wordpress/components": "^21.3.0",
+		"@wordpress/compose": "^5.18.0",
+		"@wordpress/data": "^7.4.0",
+		"@wordpress/date": "^4.20.0",
+		"@wordpress/element": "^4.18.0"
+	}
+}

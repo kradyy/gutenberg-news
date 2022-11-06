@@ -1,0 +1,44 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-dynamic-news {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wp-block-create-block-dynamic-news li {
+  padding: 20px;
+  flex: 0 0 33.333333%;
+}
+.wp-block-create-block-dynamic-news li img {
+  margin-bottom: 0;
+}
+.wp-block-create-block-dynamic-news li h5 {
+  font-size: 20px;
+  margin: 15px 0 0;
+  line-height: 1.4;
+  list-style-type: none;
+}
+.wp-block-create-block-dynamic-news li h5 a {
+  color: #000;
+}
+.wp-block-create-block-dynamic-news li time {
+  font-size: 12px;
+  color: #aaa;
+}
+.wp-block-create-block-dynamic-news li p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
